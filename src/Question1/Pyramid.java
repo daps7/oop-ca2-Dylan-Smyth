@@ -1,3 +1,5 @@
+package Question1;
+
 public class Pyramid
 {
     private int height;
