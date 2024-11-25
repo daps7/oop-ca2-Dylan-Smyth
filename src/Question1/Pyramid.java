@@ -1,38 +1,49 @@
 package Question1;
 
-public class Pyramid
-{
-    private int height;
-    private int width;
-    private int depth;
+public class Pyramid implements IMeasurableContainer {
+    private double sideLength;
+    private double height;
+    private double weight;
 
-    public Pyramid(int height, int width, int depth) {
+    public Pyramid(double sideLength, double height, double weight) {
+        this.sideLength = sideLength;
         this.height = height;
-        this.width = width;
-        this.depth = depth;
+        this.weight = weight;
     }
 
-    public int getHeight() {
+    @Override
+    public double weight() {
+        return weight;
+    }
+
+    @Override
+    public double rectangularVolume() {
+        return sideLength * sideLength * height;
+    }
+
+    // Getters and setters
+
+    public double getSideLength() {
+        return sideLength;
+    }
+
+    public void setSideLength(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
-    public int getWidth() {
-        return width;
+    public double getWeight() {
+        return weight;
     }
 
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public int getDepth() {
-        return depth;
-    }
-
-    public void setDepth(int depth) {
-        this.depth = depth;
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 }

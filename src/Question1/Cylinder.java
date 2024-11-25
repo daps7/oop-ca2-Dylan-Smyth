@@ -1,17 +1,28 @@
 package Question1;
 
-public class Cylinder
-{
+public class Cylinder implements IMeasurableContainer {
     private double radius;
     private double height;
-    private double width;
+    private double weight;
 
-    public Cylinder(double radius, double height, double width)
-    {
+    public Cylinder(double radius, double height, double weight) {
         this.radius = radius;
         this.height = height;
-        this.width = width;
+        this.weight = weight;
     }
+
+    @Override
+    public double weight() {
+        return weight;
+    }
+
+    @Override
+    public double rectangularVolume() {
+        double diameter = 2 * radius;
+        return diameter * diameter * height;
+    }
+
+    // Getters and setters
 
     public double getRadius() {
         return radius;
@@ -29,11 +40,12 @@ public class Cylinder
         this.height = height;
     }
 
-    public double getWidth() {
-        return width;
+    public double getWeight() {
+        return weight;
     }
 
-    public void setWidth(double width) {
-        this.width = width;
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 }
+
