@@ -15,12 +15,12 @@ public class Box implements IMeasurableContainer {
 
     @Override
     public double weight() {
-        return weight;
+        return weight; // Return the weight of the box.
     }
 
     @Override
     public double rectangularVolume() {
-        return width * height * depth;
+        return width * height * depth; // Volume of the rectangular box.
     }
 
     // Getters and setters
@@ -57,4 +57,3 @@ public class Box implements IMeasurableContainer {
         this.weight = weight;
     }
 }
-

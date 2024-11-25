@@ -13,12 +13,12 @@ public class Pyramid implements IMeasurableContainer {
 
     @Override
     public double weight() {
-        return weight;
+        return weight; // Return the weight of the pyramid.
     }
 
     @Override
     public double rectangularVolume() {
-        return sideLength * sideLength * height;
+        return sideLength * sideLength * height; // Volume of the enclosing rectangular box.
     }
 
     // Getters and setters

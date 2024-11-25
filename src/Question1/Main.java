@@ -6,28 +6,32 @@ public class Main {
     public static void main(String[] args) {
         ContainerManager manager = new ContainerManager();
 
+        // Create containers
         Box box = new Box(2, 3, 4, 10.5);
         Cylinder cylinder = new Cylinder(2.0, 5.0, 15.0);
         Pyramid pyramid = new Pyramid(3.0, 6.0, 8.0);
 
+        // Add to manager
         manager.add(box);
         manager.add(cylinder);
         manager.add(pyramid);
 
+        // Display total weight and volume
         System.out.println("Total Weight: " + manager.totalWeight());
         System.out.println("Total Rectangular Volume: " + manager.totalRectangularVolume());
 
+        // List all containers
         List<IMeasurableContainer> containers = manager.getAllContainers();
         for (IMeasurableContainer container : containers) {
             if (container instanceof Box) {
                 Box b = (Box) container;
-                System.out.println("Box : Width: " + b.getWidth() + ", Height: " + b.getHeight() + ", Depth: " + b.getDepth() + ", Weight: " + b.weight());
+                System.out.println("Box Width: " + b.getWidth() + ", Height: " + b.getHeight() + ", Depth: " + b.getDepth() + ", Weight: " + b.weight());
             } else if (container instanceof Cylinder) {
                 Cylinder c = (Cylinder) container;
-                System.out.println("Cylinder : Radius: " + c.getRadius() + ", Height: " + c.getHeight() + ", Weight: " + c.weight());
+                System.out.println("Cylinder Radius: " + c.getRadius() + ", Height: " + c.getHeight() + ", Weight: " + c.weight());
             } else if (container instanceof Pyramid) {
                 Pyramid p = (Pyramid) container;
-                System.out.println("Pyramid : Side Length: " + p.getSideLength() + ", Height: " + p.getHeight() + ", Weight: " + p.weight());
+                System.out.println("Pyramid Side Length: " + p.getSideLength() + ", Height: " + p.getHeight() + ", Weight: " + p.weight());
             }
         }
     }
