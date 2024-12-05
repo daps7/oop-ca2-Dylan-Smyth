@@ -19,7 +19,7 @@ public class Box implements IMeasurableContainer {
     }
 
     @Override
-    public double rectangularVolume() {
+    public double Volume() {
         return width * height * depth; // Volume of the rectangular box.
     }
 

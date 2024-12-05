@@ -17,7 +17,7 @@ public class Pyramid implements IMeasurableContainer {
     }
 
     @Override
-    public double rectangularVolume() {
+    public double Volume() {
         return sideLength * sideLength * height; // Volume of the enclosing rectangular box.
     }
 

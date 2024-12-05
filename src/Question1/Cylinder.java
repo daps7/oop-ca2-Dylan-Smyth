@@ -17,7 +17,7 @@ public class Cylinder implements IMeasurableContainer {
     }
 
     @Override
-    public double rectangularVolume() {
+    public double Volume() {
         double diameter = 2 * radius; // Diameter of the cylinder.
         return diameter * diameter * height; // Volume of the enclosing rectangular box.
     }

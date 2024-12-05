@@ -18,8 +18,8 @@ public class ContainerManager {
         return containers.stream().mapToDouble(IMeasurableContainer::weight).sum();
     }
 
-    public double totalRectangularVolume() {
-        return containers.stream().mapToDouble(IMeasurableContainer::rectangularVolume).sum();
+    public double totalVolume() {
+        return containers.stream().mapToDouble(IMeasurableContainer::Volume).sum();
     }
 
     public void clearAll() {

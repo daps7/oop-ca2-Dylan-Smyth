@@ -15,7 +15,7 @@ public class Main {
         manager.add(pyramid);
 
         System.out.println("Total Weight: " + manager.totalWeight());
-        System.out.println("Total Rectangular Volume: " + manager.totalRectangularVolume());
+        System.out.println("Total Rectangular Volume: " + manager.totalVolume());
 
         List<IMeasurableContainer> containers = manager.getAllContainers();
         for (IMeasurableContainer container : containers) {
