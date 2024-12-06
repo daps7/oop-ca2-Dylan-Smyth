@@ -4,16 +4,6 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Stack;
 
-class Cell
-{
-    int row, col;
-
-    public Cell(int row, int col) {
-        this.row = row;
-        this.col = col;
-    }
-}
-
 public class FloodFill {
     public static void main(String[] args) {
         // Initialize a 10x10 array with all zeros

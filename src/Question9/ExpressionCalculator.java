@@ -19,7 +19,6 @@ public class ExpressionCalculator
     public static double evaluateExpression(String expression) throws Exception {
         // Step 1: Convert infix to postfix
         List<String> postfix = infixToPostfix(expression);
-
         // Step 2: Evaluate the postfix expression
         return evaluatePostfix(postfix);
     }
