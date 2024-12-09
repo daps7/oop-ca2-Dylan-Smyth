@@ -1,4 +1,4 @@
-package Question4;
+package Question10;
 
 class Cell {
     int row, column;
@@ -8,4 +8,3 @@ class Cell {
         this.column = column;
     }
 }
-

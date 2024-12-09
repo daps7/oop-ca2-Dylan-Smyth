@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class FloodFill {
+public class Question4 {
     public static void main(String[] args) {
         // Initialize a 10x10 array with all zeros
         int[][] grid = new int[10][10];
@@ -56,7 +56,7 @@ public class FloodFill {
             Cell current = stack.pop();
 
             int row = current.row;
-            int col = current.col;
+            int col = current.column;
 
             // If the cell is already filled or occupied, skip it
             if (grid[row][col] != 0) continue;

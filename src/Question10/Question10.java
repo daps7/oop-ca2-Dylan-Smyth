@@ -1,14 +1,7 @@
 package Question10;
 import java.util.Stack;
 
-class Cell {
-    int row, column;
 
-    public Cell(int row, int column) {
-        this.row = row;
-        this.column = column;
-    }
-}
 
 public class Question10
 {
